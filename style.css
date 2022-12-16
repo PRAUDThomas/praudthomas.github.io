@@ -21,8 +21,9 @@ header {
     text-align: center;
     margin-left: 0;
     font-family: 'Bakbak One', cursive;
-    box-shadow: 10px 0 5px black ;
-
+    box-shadow: 10px 0 5px black;
+    position: sticky;
+    top: 0;
 
 }
 
@@ -76,11 +77,52 @@ header {
 main{
     font-family: 'Roboto', sans-serif;
     margin: 2% 2%;
+    color: white;
+}
+section{
+    padding: 10%;
+    border: 2px solid;
+}
+
+#about__title, #works__title, #skills__title, #contact__title{
+    font-size: 3rem;
+}
+.about__text{
+    font-size: 2rem;
+}
+
+.works{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.works_cards{
+    width: 40%;
+    margin-bottom: 2%;
+    position: relative;
+
+}
+.works__cards__presentation{
+position: absolute;
+bottom: 0.1em;
+background-color: rgba(88, 84, 84, 0.5);
+width: 100%;
+padding: 2%;
+}
+
+.skills__container{
+    display: flex;
+    justify-content: space-between;
+}
+.skill__container__list-item{
+    font-size: 2rem;
 
 }
 
-.main__title{
-    font-size: 3rem;
+.contact__container__form{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
 }
 
 

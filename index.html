@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
@@ -21,17 +22,125 @@
         <img class="header__logo" src="img/1645613260021.png" alt="logo_portrait">
         <h1 class="header__title">Thomas PRAUD</h1>
 
-        <nav class="header__navbar"> 
+        <nav class="header__navbar">
             <ul class="header__navbar__list">
-                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link" href="#about">About</a></li>
-                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link" href="#works">Works</a></li>
-                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link" href="#skills">Skills</a></li>
-                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link" href="#contact">Contact</a></li>
+                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link"
+                        href="#about__title">About</a></li>
+                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link"
+                        href="#works__title">Works</a></li>
+                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link"
+                        href="#skills__title">Skills</a></li>
+                <li class="header__navbar__list-item"><a class="header__navbar__list-item-link"
+                        href="#contact__title">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="main__title">About</h1>
+        <a href="#about"></a>
+        <h1 id="about__title">About</h1>
+        <section class="about">
+            <p class="about__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem, quae ad
+                consequuntur ea sed voluptate
+                praesentium harum repellendus libero iure, odit dolorum quod, rerum ducimus aperiam voluptas eum! Quos.
+                Eius odit neque reprehenderit exercitationem unde sed rerum. Quaerat pariatur aperiam iste, in esse
+                maxime
+                obcaecati corporis rem deserunt alias voluptates ipsa. Qui aut reiciendis cum dolorum omnis voluptate
+                tenetur.
+                Fugit ut, sequi doloribus eum dolorem maxime quos porro numquam explicabo dignissimos rerum dolore quod
+                laborum voluptate debitis est nesciunt facere velit vero. Amet voluptates voluptatem accusantium eveniet
+                sint magnam!
+                Quasi doloremque iure esse quibusdam modi accusantium alias perferendis fugit natus voluptatibus labore
+                illo
+                earum, nemo animi, sequi qui, beatae totam commodi! Odio, quod? Ipsum enim rerum accusamus sunt
+                quibusdam?
+                Facere iure quam assumenda, fuga ex similique sint placeat amet necessitatibus mollitia, quo aspernatur
+                nemo
+                reprehenderit eius ullam sed cupiditate dolore, et totam. Distinctio nobis porro hic libero nam
+                consectetur.
+            </p>
+        </section>
+
+        <h1 id="works__title">Works</h1>
+        <section class="works">
+            <article class="works_cards">
+                <img class="works__cards-img" src="/img/barret.png" alt="description work">
+                <p class="works__cards__presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article class="works_cards">
+                <img src="/img/barret.png" alt="description work">
+                <p class="works__cards__presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article class="works_cards">
+                <img src="/img/barret.png" alt="description work">
+                <p class="works__cards__presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article class="works_cards">
+                <img src="/img/barret.png" alt="description work">
+                <p class="works__cards__presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+        </section>
+
+        <h1 id="skills__title">Skills</h1>
+
+        <section class="skills">
+            <div class="skills__container">
+                <ul class="skills__container__list">
+                    <li class="skill__container__list-item">Lorem</li>
+                    <li class="skill__container__list-item">Lorem</li>
+                    <li class="skill__container__list-item">Lorem</li>
+                    <li class="skill__container__list-item">Lorem</li>
+                    <li class="skill__container__list-item">Lorem</li>
+                </ul>
+                <ul class="skills__container__list">
+                    <li class="skill__container__list-item">ipsum</li>
+                    <li class="skill__container__list-item">ipsum</li>
+                    <li class="skill__container__list-item">ipsum</li>
+                    <li class="skill__container__list-item">ipsum</li>
+                    <li class="skill__container__list-item">ipsum</li>
+                </ul>
+                <ul class="skills__container__list">
+                    <li class="skill__container__list-item">dolor</li>
+                    <li class="skill__container__list-item">dolor</li>
+                    <li class="skill__container__list-item">dolor</li>
+                    <li class="skill__container__list-item">dolor</li>
+                    <li class="skill__container__list-item">dolor</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+        <h1 id="contact__title">Contact</h1>
+        <section class="contact">
+            <div class="contact__container">
+                <form class="contact__container__form">
+                    <label for="fname">Nom & prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+
+                    <label for="emailAddress">Email</label>
+                    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
 
 
     </main>
